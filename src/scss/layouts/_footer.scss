@@ -1,0 +1,27 @@
+@use "../globals/custom" as *;
+@use "../globals/utilities" as *;
+
+.footer {
+  background-color: $primary;
+  height: 100%;
+  padding: 5rem 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 1rem 0;
+  gap: 10rem;
+
+  &-item {
+    width: 5rem;
+    fill: $info;
+  }
+}
+
+.copyright {
+  padding: 1rem 0 2rem 0;
+  font-size: 1.6rem;
+  color: $light;
+  text-align: center;
+}

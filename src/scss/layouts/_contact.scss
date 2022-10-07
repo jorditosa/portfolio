@@ -1,0 +1,65 @@
+@use "../globals/custom" as *;
+@use "../globals/utilities" as *;
+
+.contact {
+  margin-top: 15rem;
+  background-color: $secondary;
+  width: 100%;
+  height: 80vh;
+}
+
+.contact-container {
+  padding: 5rem 0;
+  flex-direction: column;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  input:not([type="submit"]),
+  textarea {
+    width: 50rem;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    background-color: $light;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: $rounded;
+  }
+  input[value="Enviar"] {
+    display: inline-block;
+    margin: 1rem auto;
+  }
+}
+
+input:focus,
+textarea:focus {
+  border: none;
+  outline: 0.2rem dotted $primary;
+}
+
+label {
+  color: $primary;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* Validación del formulario */
+.message {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $light;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.2rem 0.2rem $dark;
+  margin: 0 auto 1rem 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.error.message {
+  visibility: visible;
+  opacity: 1;
+}

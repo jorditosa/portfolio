@@ -1,0 +1,11 @@
+// Globals
+@use "globals/custom";
+@use "globals/utilities";
+
+// Layouts
+@use "layouts/landing";
+@use "layouts/navbar";
+@use "layouts/about";
+@use "layouts/experience";
+@use "layouts/contact";
+@use "layouts/footer";

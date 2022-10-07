@@ -1,0 +1,52 @@
+@use "../globals/custom" as *;
+@use "../globals/utilities" as *;
+
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient($info, $primary);
+  flex-direction: column;
+  position: relative;
+}
+
+.landing-page-heading {
+  font-weight: 700;
+  font-size: 4rem;
+  color: $light;
+  background-color: $secondary;
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  border-bottom: 0.3rem solid $light;
+  text-shadow: 0.2rem 0.2rem 1rem $primary;
+  transform: skew(-5deg);
+}
+
+.landing-page-img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  mix-blend-mode: hard-light;
+  border-radius: 50%;
+  border: 0.8rem solid $info;
+  background-color: $primary;
+}
+.landing-page-name {
+  font-size: 1.8rem;
+  color: $light;
+  background-color: $secondary;
+  margin: 5rem 0;
+  padding: 1.8rem;
+  letter-spacing: 0.2rem;
+  transform: skew(-5deg);
+}
+
+.language-btn {
+  position: absolute;
+  top: 5rem;
+  right: 1rem;
+}
+.language-btn:hover {
+  cursor: pointer;
+}

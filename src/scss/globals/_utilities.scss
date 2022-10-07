@@ -1,0 +1,50 @@
+@use "./custom" as *;
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 4rem;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 4rem 0;
+  border-bottom: 0.3rem solid $primary;
+  text-shadow: 0.2rem 0.2rem 1rem $info;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: $light;
+  background-color: $secondary;
+  border: 0.2rem solid $primary;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0.4rem 0.4rem 0.8rem $info;
+}
+
+.active .navbar-link {
+  color: $info;
+}
+.active.navbar-link::before,
+.active.navbar-link::after {
+  width: 130%;
+}
